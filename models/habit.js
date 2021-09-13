@@ -11,7 +11,10 @@ const HabitSchema=new mongoose.Schema({
     Streak:{
         type:Number
     },
-    days:[]
+    TodaysDate:{
+        type:Number
+    },
+    Days:[]
 });
 
 const Habit=mongoose.model('Habits',HabitSchema);
