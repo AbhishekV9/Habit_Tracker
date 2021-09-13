@@ -1,5 +1,13 @@
-
+const habits=require('../models/habit');
 
 module.exports.home=function(req,res){
-    res.end('<h1>Express is up</h1>');
+    habits.find({},function(err,habits){
+        if(err){
+            console.log(`Error in fetching habits from db:${err}`);
+        }
+        res.render('home',{
+            title: 'Habit Tracker | Home' ,
+            habitList:habits
+        });
+    });
 }
