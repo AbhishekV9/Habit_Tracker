@@ -32,7 +32,17 @@
                     <tr>
                         <th> <%= i.Name %> </th>
                         <% for(let j=0 ;j<i.Days.length;j++) {%>
-                            <td><%= i.Days[j] %> </td>
+                            <td>
+                                <button>
+                                    <%= i.Days[j] %>
+                                </button>
+                                <div>
+                                    <a href="/weekView/update/<%= i.id %>/<%= j %>/Completed ">Completed</a>
+                                    <a href="/weekView/update/<%= i.id %>/<%= j %>/Incomplete ">Incomplete</a>
+                                    <a href="/weekView/update/<%= i.id %>/<%= j %>/None ">None</a>
+                                </div>    
+                            
+                            </td>
                             
                         <% } %>
                     </tr>
