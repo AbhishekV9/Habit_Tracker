@@ -21,8 +21,8 @@
     </div>
     <main>
         <h1>Habits</h1>
-        <div>
-            <% for(let i of habitList) { %>
+        <% for(let i of habitList) { %>
+            <div>           
                 <div>
                     <%= i.Name %>
                 </div>
@@ -30,9 +30,9 @@
                     <span>Completed:</span> <%= i.Completed %> / <%= i.Days.length %> </br>
                     <span>Longest Streak:</span><%= i.Streak %>
                 </div>
-                <a href="delete/<%= i.id %>">Delete</a>
-            <% } %>
-        </div>
+                <a href="delete/<%= i.id %>">Delete</a>          
+            </div>
+        <% } %>
     </main>
 
 </body>

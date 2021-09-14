@@ -1,12 +1,46 @@
+<%const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"]; %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <h1>weekView</h1>
+
+    <%- include("header") -%>
+
+    <main>
+
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th>Habit Name</th>
+                    <th><%= new Date().getDate()-6 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate()-5 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate()-4 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate()-3 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate()-2 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate()-1 %>-<%= monthNames[new Date().getMonth()] %></th>
+                    <th><%= new Date().getDate() %>-<%= monthNames[new Date().getMonth()] %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i of habitList){ %>
+                    <tr>
+                        <th> <%= i.Name %> </th>
+                        <% for(let j=0 ;j<i.Days.length;j++) {%>
+                            <td><%= i.Days[j] %> </td>
+                            
+                        <% } %>
+                    </tr>
+
+                <% }%>
+            </tbody>
+        </table>
+    </main>
+
 </body>
 </html>
