@@ -28,3 +28,14 @@ module.exports.create=function(req,res){
         res.redirect('back');
     })
 }
+
+module.exports.delete=function(req,res){
+    id=req.params.id;
+    habits.findByIdAndDelete(id,function(err,habit){
+        if(err){
+            console.log('error in deleting from database');
+            return;
+        }
+        res.redirect('back')
+    })
+}
