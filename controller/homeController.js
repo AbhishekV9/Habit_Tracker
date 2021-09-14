@@ -13,8 +13,7 @@ module.exports.home=function(req,res){
 }
 
 module.exports.create=function(req,res){
-    todays_date=new Date().getDate();
-    
+    todays_date=new Date().getDate();   
     habits.create({
        Name:req.body.name,
        Completed:0,

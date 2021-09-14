@@ -11,11 +11,28 @@
     <%- include("header") -%>
 
     <div>
+        <div>
+            <h1>Let's Start a new Habit</h1>
+        </div>
         <form action="create/habit" method="POST">
             <input type="text" placeholder="Enter Habit" name="name">
             <button type="submit">Add Habit</button>
         </form>
     </div>
+    <main>
+        <h1>Habits</h1>
+        <div>
+            <% for(let i of habitList) { %>
+                <div>
+                    <%= i.Name %>
+                </div>
+                <div>
+                    <span>Completed:</span> <%= i.Completed %> / <%= i.Days.length %> </br>
+                    <span>Longest Streak:</span><%= i.Streak %>
+                </div>
+            <% } %>
+        </div>
+    </main>
 
 </body>
 </html>
