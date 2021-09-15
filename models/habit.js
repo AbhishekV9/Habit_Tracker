@@ -17,6 +17,6 @@ const HabitSchema=new mongoose.Schema({
     Days:[]
 });
 
-const Habit=mongoose.model('Habits',HabitSchema);
+const Habit=mongoose.model('Habit',HabitSchema);
 
 module.exports=Habit;
