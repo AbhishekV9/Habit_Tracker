@@ -7,6 +7,9 @@ const db=require('./config/mongoose');
 app.set('view engine','ejs');
 app.set('views','./views');
 
+//set up folder for static files
+app.use(express.static('assets'));
+
 app.use(express.urlencoded());
 
 app.use('/',require('./routes'));
