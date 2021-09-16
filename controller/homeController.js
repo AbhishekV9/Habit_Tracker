@@ -1,5 +1,7 @@
+//aquiring database model
 const habits=require('../models/habit');
 
+//for home module :- 
 module.exports.home=function(req,res){
     habits.find({},function(err,habits){
         if(err){
@@ -12,6 +14,7 @@ module.exports.home=function(req,res){
     });
 }
 
+//controller for creating new Habit
 module.exports.create=function(req,res){
     todays_date=new Date().getDate();   
     habits.create({
@@ -29,6 +32,7 @@ module.exports.create=function(req,res){
     })
 }
 
+//controller for deleting habit from habitlist
 module.exports.delete=function(req,res){
     id=req.params.id;
     habits.findByIdAndDelete(id,function(err,habit){

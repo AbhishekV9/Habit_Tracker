@@ -1,9 +1,12 @@
+//initial setup
 const express=require('express');
 const app=express();
 const port=8800;
 
+//acquering database
 const db=require('./config/mongoose');
 
+//seting up the view engine
 app.set('view engine','ejs');
 app.set('views','./views');
 
@@ -12,6 +15,7 @@ app.use(express.static('assets'));
 
 app.use(express.urlencoded());
 
+//aquiring routes
 app.use('/',require('./routes'));
 
 app.listen(port,function(err){

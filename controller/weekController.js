@@ -1,5 +1,6 @@
 const habits = require('../models/habit');
 
+//for weekview module:-
 module.exports.weekView = function (req, res) {
   habits.find({}, function (err, habit) {
     chekDates(habit);
@@ -14,6 +15,7 @@ module.exports.weekView = function (req, res) {
   });
 };
 
+//update controller to update the track of your task as completed,incomplete or none
 module.exports.update = function (req, res) {
   let id = req.params.id;
   let day = req.params.day;
@@ -30,6 +32,7 @@ module.exports.update = function (req, res) {
   });
 };
 
+//if the date when habit was created and the date you are viewing this page is not same then this function swaps the track of your habit accordingly
 const chekDates = function (habits) {
   let currentDate = new Date().getDate();
   for (let h of habits) {
@@ -50,6 +53,8 @@ const chekDates = function (habits) {
   }
 };
 
+
+//this function calculate the completed days and longest streak
 const calculateStreak = async function (habit) {
   try {
     let noOfCompletedDays = 0;

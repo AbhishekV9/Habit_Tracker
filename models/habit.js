@@ -1,5 +1,6 @@
 const mongoose=require('mongoose');
 
+//schema for habit
 const HabitSchema=new mongoose.Schema({
     Name:{
         type:String,

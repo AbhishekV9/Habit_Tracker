@@ -1,5 +1,6 @@
-let change = document.getElementsByClassName('dropdown-toggle');
 
+//changing color when task is toggled between completed, incomplete and none
+let change = document.getElementsByClassName('dropdown-toggle');
 
 for(let i of change){
     if(i.innerHTML.includes('Completed') ){
