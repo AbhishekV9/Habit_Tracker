@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <!-- css link -->
     <link rel="stylesheet" href="css/home.css">
@@ -29,19 +29,31 @@
             <button class="btn btn-dark mx-3" type="submit">Add Habit</button>
         </form>
     </div>
-    <main>
-        <h1>Habits</h1>
+
+    <main class="border border-secondary w-6 mx-auto my-5 p-4">
+        <h1  class="text-center my-auto border-bottom border-secondary p-3" >Habits</h1>
+
+        <div class="text-center">
+            <% if(habitList.length===0) {%>
+                Soory!<br> You have no Habits, Try adding one.
+              <%}%>
+        </div>
+        
         <% for(let i of habitList) { %>
-            <div>           
-                <div>
-                    <%= i.Name %>
+            <div class="card mb-3 mx-auto my-2" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6 my-auto ">
+                    <h3 class="card-title text-center"><%= i.Name %> </h3>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <p class="card-text text-center">Completed: <%= i.Completed %> / <%= i.Days.length %> </p>
+                      <p class="card-text text-center">Longest Streak:<%= i.Streak %></p>
+                      <a class="btn btn-danger ms-6" href="/delete/<%= i.id %>">Delete</a> 
+                    </div>
+                  </div>
                 </div>
-                <div>
-                    <span>Completed:</span> <%= i.Completed %> / <%= i.Days.length %> </br>
-                    <span>Longest Streak:</span><%= i.Streak %>
-                </div>
-                <a href="/delete/<%= i.id %>">Delete</a>          
-            </div>
+              </div>
         <% } %>
     </main>
     <!-- bootstrap js link -->
