@@ -24,6 +24,7 @@ A web application where you can:-
 
 ### Screenshot: ######
 
+![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
 
 
