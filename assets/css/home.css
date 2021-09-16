@@ -22,3 +22,20 @@
 .ms-6 {
     margin-left: 4rem ;
   }
+
+
+@media (max-width: 830px) { 
+    #input-form{
+        width:90%;
+    }
+
+    .w-6{
+        width:90%;
+    }
+ }
+
+ @media (max-width: 750px) { 
+    #input-form{
+        width:100%;
+    }
+}
