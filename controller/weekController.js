@@ -68,13 +68,16 @@ const calculateStreak = async function (habit) {
     let currentStrek = 0;
     let streak = 0;
     for (let i = 0; i < habit.Days.length; i++) {
-      if (habit.Days[i] == 'Completed') {
+      if (habit.Days[i] === 'Completed') {
         noOfCompletedDays++;
         currentStrek++;
+       
       } else {
         if (currentStrek > streak) {
           streak = currentStrek;
           currentStrek = 0;
+        }else{
+          currentStrek=0;
         }
       }
     }
