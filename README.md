@@ -30,7 +30,7 @@ A web application where you can:-
 
 
 <h4>Week View</h4>
-![week view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
+<img src="https://github.com/AbhishekV9/Habit_Tracker/blob/master/weekpageSS.png" />
 
 ### Technologies Stack: ######
 <ul>
