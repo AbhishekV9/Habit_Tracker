@@ -28,7 +28,6 @@ A web application where you can:-
 
 ![home view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
-</br>
 
 <h4>Week View</h4>
 ![week view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
