@@ -28,7 +28,10 @@ A web application where you can:-
 
 ![home view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
-
+</br>
+</br>
+</br>
+</br>
 <h4>Week View</h4>
 <img src="https://github.com/AbhishekV9/Habit_Tracker/blob/master/weekpageSS.png" />
 
@@ -40,17 +43,17 @@ A web application where you can:-
   <li><a href="https://www.mongodb.com/">mongoDB </a>- the database for modern applications </li>
   <li><a href="https://ejs.co/">EJS</a>- Embedded JavaScript templating </li>
   <li><a href="https://html.com/">HTML5</a>- for simple structure </li>
-  <li><a href="https://html.com/">HTML5</a>- for simple structure </li>
+  <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">BootStrap 5</a>- for Styling </li>
   <li><a href="http://css.com/">CSS3</a>- for Styling </li>
   <li>etc </li>
 </ul>
 
 ### Modules Used: ######
 
- "ejs": "^3.1.6",</br>
- "express": "^4.17.1", </br>
- "mongoose": "^5.12.13", </br>
- "nodemon": "^2.0.12"
+  "body-parser": "^1.19.0",</br>
+  "ejs": "^3.1.6",</br>
+  "express": "^4.17.1",</br>
+  "mongoose": "^6.0.5"
  
  ### How to Install : ######
  
