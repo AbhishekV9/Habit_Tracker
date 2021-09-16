@@ -23,10 +23,15 @@ A web application where you can:-
 </ul>
 
 ### Screenshot: ######
+</br>
+<h4>Home Page</h4>
 
 ![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
+</br>
 
+<h4>Week View</h4>
+![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/weekpageSS.png)
 
 ### Technologies Stack: ######
 <ul>
