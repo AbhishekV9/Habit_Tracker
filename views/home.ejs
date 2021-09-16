@@ -33,14 +33,14 @@
     <main class="border border-secondary w-6 mx-auto my-5 p-4">
         <h1  class="text-center my-auto border-bottom border-secondary p-3" >Habits</h1>
 
-        <div class="text-center">
+        <div class="text-center my-4y">
             <% if(habitList.length===0) {%>
                 Soory!<br> You have no Habits, Try adding one.
               <%}%>
         </div>
         
         <% for(let i of habitList) { %>
-            <div class="card mb-3 mx-auto my-2" style="max-width: 540px;">
+            <div class="card mb-3 mx-auto  " style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-6 my-auto ">
                     <h3 class="card-title text-center"><%= i.Name %> </h3>

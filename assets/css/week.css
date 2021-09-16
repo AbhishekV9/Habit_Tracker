@@ -1,3 +1,7 @@
 *{
     font-family: 'Fira Sans Condensed', sans-serif;
 }
+
+.index{
+    z-index: 20!important; 
+}
