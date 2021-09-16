@@ -1,7 +1,7 @@
 //initial setup
 const express=require('express');
 const app=express();
-const port=8800;
+const port=8000;
 
 //acquering database
 const db=require('./config/mongoose');
