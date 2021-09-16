@@ -49,6 +49,13 @@ const chekDates = function (habits) {
       h.TodaysDate = currentDate;
       h.save();
       calculateStreak(h);
+    }else if(difference>6){
+      for(let j=0;j<h.dayas.length;j++){
+        h.Days[j]='None';
+      }
+      h.TodaysDate = currentDate;
+      h.save();
+      calculateStreak(h);
     }
   }
 };
