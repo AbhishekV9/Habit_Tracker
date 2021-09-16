@@ -26,12 +26,12 @@ A web application where you can:-
 </br>
 <h4>Home Page</h4>
 
-![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
+![home view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
 </br>
 
 <h4>Week View</h4>
-![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
+![week view](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
 ### Technologies Stack: ######
 <ul>
