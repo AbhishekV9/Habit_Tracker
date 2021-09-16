@@ -31,7 +31,7 @@ A web application where you can:-
 </br>
 
 <h4>Week View</h4>
-![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/weekpageSS.png)
+![alt text](https://github.com/AbhishekV9/Habit_Tracker/blob/master/homePageSS.png)
 
 ### Technologies Stack: ######
 <ul>
