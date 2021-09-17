@@ -14,7 +14,8 @@ app.set('views','./views');
 app.use(express.static('assets'));
 
 app.use(express.urlencoded());
-
+// use cors
+app.use(cors());
 //aquiring routes
 app.use('/',require('./routes'));
 
