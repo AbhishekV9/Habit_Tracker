@@ -1,7 +1,20 @@
 const habits = require('../models/habit');
-
+const Month = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 //for weekview module:-
 module.exports.weekView = function (req, res) {
+  let today = new Date();
+  let days = [];
+  for (let i = 0; i < 7; i++) {
+    let date =
+    today.getDate() + '-' + Month[today.getMonth()] + ' ' + today.getFullYear();
+      today.setDate(today.getDate() - 1); 
+    days.push(date);
+  }
+  //rereese array
+  days.reverse();
   habits.find({}, function (err, habit) {
     chekDates(habit);
     if (err) {
@@ -11,6 +24,7 @@ module.exports.weekView = function (req, res) {
     return res.render('week', {
       title: 'Weekly View',
       habitList: habit,
+      days:days
     });
   });
 };
@@ -38,6 +52,9 @@ const chekDates = function (habits) {
   for (let h of habits) {
     const id = h.id;
     const difference = currentDate - h.TodaysDate;
+    if(difference<0){
+      difference= difference * (-1);
+    }
     if (difference !== 0) {
       for (let j = difference, k = 0; j < h.Days.length; j++, k++) {
         h.Days[k] = h.Days[j];
