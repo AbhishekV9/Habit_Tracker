@@ -10,7 +10,7 @@ module.exports.weekView = function (req, res) {
   for (let i = 0; i < 7; i++) {
     let date =
     today.getDate() + '-' + Month[today.getMonth()] + ' ' + today.getFullYear();
-      today.setDate(today.getDate() - 1); 
+    today.setDate(today.getDate() - 1); 
     days.push(date);
   }
   //rereese array
