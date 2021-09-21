@@ -1,7 +1,7 @@
 # Habit_Tracker
  
  ### Description: ######
-A web application where you can:-
+A web application where:-
 <ul>
   <li> You can add multiple habits to track like reading a book, going to the gym etc</li>
   <li>Track each habit everyday. These are the 3 statuses of a habit:
