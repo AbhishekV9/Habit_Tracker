@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const uri = process.env.HABIT_URI;
+const uri = process.env.HABIT_URI || 'mongodb+srv://avishekv444:hppavalion@habittracker.sevb6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
